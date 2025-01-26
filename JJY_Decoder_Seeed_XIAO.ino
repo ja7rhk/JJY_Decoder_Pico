@@ -318,7 +318,10 @@ void Task_OLED(void *pvParameters)
                     s3 = buf;
         		}
         		else
+                {
         			s3 = ("(x)             ");
+                    JJY_period = false;      /* set Time mode */
+                }
         	}
 
         	/* print received data */
